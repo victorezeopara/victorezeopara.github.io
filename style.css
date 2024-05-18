@@ -1,0 +1,118 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+.main_container {
+  width: 100vw;
+  height: 300vh;
+}
+
+.navigation {
+  display: flex;
+  list-style: none;
+
+  gap: 8%;
+  color: white;
+}
+
+.nav_container {
+  margin-right: 8%;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+}
+
+.navigation a:hover {
+  background: red;
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  padding: 10%;
+}
+
+.nav_bar {
+  /* background: #250f0f69; */
+  width: 100vw;
+
+  position: absolute;
+  display: flex;
+  z-index: 100;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.logo {
+  max-width: 200px;
+  margin-left: 0.5%;
+}
+
+.hero_image_div {
+  height: 30%;
+  background: green;
+  position: relative;
+}
+
+/* this is where i put the div */
+.hero_image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  position: absolute;
+}
+.heroText {
+  position: absolute;
+  right: 10%;
+  top: 20%;
+}
+
+.rectangle {
+  width: 100%;
+  height: 100%;
+  background: red;
+  position: absolute;
+  /* Rectangle 20 */
+
+  position: absolute;
+
+  left: 0px;
+  top: 0px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(24, 0, 0, 0.49) 0%,
+    rgba(155, 145, 145, 0) 49.1%,
+    rgba(157, 148, 148, 0) 62.1%,
+    #f6f6f6 100%
+  );
+}
+
+.content {
+  height: 30%;
+  width: 100%;
+  margin-top: 2%;
+}
+
+.grid-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template: auto auto / 30% 30%;
+  justify-content: center;
+  gap: 2%;
+}
+
+.contentA,
+.contentB {
+  display: flex;
+}
+
+.footer {
+  background: purple;
+  height: 8%;
+}
